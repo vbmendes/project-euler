@@ -6,7 +6,8 @@ class ProjectEuler18TestCase(unittest.TestCase):
 
     def test_build_triangle(self):
         with open('sample_triangle.txt', 'r') as f:
-            self.assertEquals(build_triangle(f.read()), [[3], [7, 4], [2, 4, 6], [8, 5, 9, 3]])
+            self.assertEquals(build_triangle(f.read()),
+                [[3], [7, 4], [2, 4, 6], [8, 5, 9, 3]])
 
     def test_max_sum_for_sample_triangle(self):
         with open('sample_triangle.txt', 'r') as f:
