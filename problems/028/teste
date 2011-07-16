@@ -1,0 +1,14 @@
+mov ebp, 2	; side length - 1
+mov ecx, 1	; corner number
+mov esi, 1	; sum of both diagonals
+_0: add ecx, ebp
+add esi, ecx	; corner #1
+add ecx, ebp
+add esi, ecx	; corner #2
+add ecx, ebp
+add esi, ecx	; corner #3
+add ecx, ebp
+add esi, ecx	; corner #4
+add ebp, 2
+cmp ebp, 1002
+jne _0
